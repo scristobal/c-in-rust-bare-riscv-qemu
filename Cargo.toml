@@ -1,0 +1,24 @@
+[package]
+name = "rust-bare-riscv"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.72.1"
+cc = "1.2.52"
+
+[features]
+default = []
+baremetal = []
+qemu = ["baremetal"]
+
+[[bin]]
+name = "std"
+path = "src/bin/std.rs"
+
+[[bin]]
+name = "baremetal"
+path = "src/bin/baremetal.rs"
+required-features = ["baremetal"]

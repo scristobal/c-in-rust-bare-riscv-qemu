@@ -1,0 +1,8 @@
+[target.riscv64gc-unknown-none-elf]
+linker = "riscv64-elf-gcc"
+rustflags = ["-C", "link-arg=-nostdlib", "-C", "link-arg=-Tlink.x"]
+
+[env]
+CC_riscv64gc_unknown_none_elf = "riscv64-elf-gcc"
+AR_riscv64gc_unknown_none_elf = "riscv64-elf-ar"
+CFLAGS_riscv64gc_unknown_none_elf = "-ffreestanding -nostdlib -march=rv64gc -mabi=lp64d"
