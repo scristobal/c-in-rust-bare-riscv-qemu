@@ -31,3 +31,7 @@ Key things to remember:
 Also works on Linux targets:
 - cargo run --target riscv64gc-unknown-linux-musl
 - cargo run --target x86_64-unknown-linux-gnu
+
+Note:
+- musl cross-compiler for risc-v available at https://musl.cc
+
