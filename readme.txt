@@ -24,6 +24,7 @@ Key things to remember:
 
 - 0x80000000: Where QEMU virt loads kernel. Hardware-specific.
 
-Setup: sudo pacman -S riscv64-elf-gcc qemu-system-riscv
-Build: cargo build --release --features qemu
-Run:   qemu-system-riscv64 -machine virt -nographic -bios none -kernel target/riscv64gc-unknown-none-elf/release/rust-bare-riscv
+Setup   :   sudo pacman -S riscv64-elf-gcc qemu-system-riscv
+Build   :   cargo build --release
+Run     :   qemu-system-riscv64 -machine virt -nographic -bios none -kernel target/riscv64gc-unknown-none-elf/release/rust-bare-riscv
+Output  :   "Starting", then "Done" (success) or "Panic" (assertion failed).

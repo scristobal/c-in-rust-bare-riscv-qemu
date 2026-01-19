@@ -9,6 +9,3 @@ edition = "2024"
 bindgen = "0.72.1"
 cc = "1.2.52"
 
-[features]
-qemu = []
-
